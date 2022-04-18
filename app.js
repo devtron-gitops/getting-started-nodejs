@@ -30,7 +30,7 @@ setInterval(function(str1, str2) {
     else if (ran > 0.25)
         text = makeid(40)+ ""+makeid(40)
   //console.log(str1 + "" + str2 + "" + text+ "" +makeid(40) + "args2" + process.argv);
-  console.log(logs[i])
+  //console.log(logs[i])
   i++
   if (i == logs.length) i = 0
 }, 1, "Hello.", "How are you?");
