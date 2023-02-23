@@ -1,9 +1,9 @@
 FROM arm64v8/node:lts-buster
 
 ENV TINI_VERSION v0.19.0
-COPY tini .
+COPY tini /tini
 RUN chmod +x tini
-ENTRYPOINT ["tini", "--"]
+ENTRYPOINT ["/tini", "--"]
 
 COPY /.  .
 RUN npm install
